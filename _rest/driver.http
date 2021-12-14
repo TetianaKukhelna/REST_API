@@ -1,0 +1,48 @@
+###  GET
+GET http://{{host}}/drivers/driver/1/
+Content-Type: application/json
+
+### PATCH
+PATCH http://{{host}}/drivers/driver/1/
+Content-Type: application/json
+
+{
+  "first_name": "Ivan lalal 111",
+  "last_name": "Ivanchenko 111"
+}
+
+
+### POST
+POST http://{{host}}/drivers/driver/
+Content-Type: application/json
+
+{
+  "first_name": "Ivan ",
+  "last_name": "Ivanchenko 1"
+}
+
+
+### DELETE
+DELETE http://{{host}}/drivers/driver/5/
+Content-Type: application/json
+
+
+
+### GET
+GET http://{{host}}/drivers/driver/
+Content-Type: application/json
+
+{
+  "first_name": "Lila",
+  "last_name": "Lilenko"
+}
+
+
+### GET dd-mm-yyyy
+GET http://{{host}}/drivers/driver/?created_at__gte=14-12-2021
+Content-Type: application/json
+
+
+### GET dd-mm-yyyy
+GET http://{{host}}/drivers/driver/?created_at__lte=14-12-2021
+Content-Type: application/json

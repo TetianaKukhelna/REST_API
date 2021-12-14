@@ -1,0 +1,51 @@
+###  GET
+GET http://{{host}}/vehicles/vehicle/?with_driver=yes
+Content-Type: application/json
+
+
+###  GET
+GET http://{{host}}/vehicles/vehicle/?with_driver=no
+Content-Type: application/json
+
+
+###  GET
+GET http://{{host}}/vehicles/vehicle/
+Content-Type: application/json
+
+
+###  GET
+GET http://{{host}}/vehicles/vehicle/1/
+Content-Type: application/json
+
+
+### PATCH
+PATCH http://{{host}}/vehicles/vehicle/1/
+Content-Type: application/json
+
+{
+  "make": "Renault lalla 23",
+  "model": "Megane ROCK!"
+}
+
+
+### POST
+POST http://{{host}}/vehicles/vehicle/
+Content-Type: application/json
+
+{
+  "make": "BMW",
+  "model": "X5",
+  "plate_number": "AA 7777 II"
+}
+
+
+### DELETE
+DELETE http://{{host}}/vehicles/vehicle/4/
+Content-Type: application/json
+
+
+
+### POST
+POST http://{{host}}/vehicles/set_driver/1/
+Content-Type: application/json
+
