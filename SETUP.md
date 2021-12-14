@@ -45,3 +45,8 @@ make up
 ```
 Docker pull image and run it in few minutes
 Website will listen `0.0.0.0:3889` and you can do request
+
+Final step.
+Run command `make migrate`
+
+Have fun!
